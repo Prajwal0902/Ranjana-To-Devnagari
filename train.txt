@@ -1,0 +1,15 @@
+from tensorflow.keras.preprocessing.text import Tokenizer
+
+# Example data
+ranjana_sentences = ["Ranjana script sentence 1", "Ranjana script sentence 2", ...]
+translations = ["Translation 1", "Translation 2", ...]
+
+# Tokenize Ranjana script sentences
+ranjana_tokenizer = Tokenizer(filters='')
+ranjana_tokenizer.fit_on_texts(ranjana_sentences)
+ranjana_sequences = ranjana_tokenizer.texts_to_sequences(ranjana_sentences)
+
+# Tokenize translations
+translation_tokenizer = Tokenizer(filters='')
+translation_tokenizer.fit_on_texts(translations)
+translation_sequences = translation_tokenizer.texts_to_sequences(translations)
