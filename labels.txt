@@ -1,0 +1,10 @@
+0 a
+1 aa
+2 ah
+3 ai
+4 am
+5 au
+6 ba
+7 bha
+8 ca
+9 cha
